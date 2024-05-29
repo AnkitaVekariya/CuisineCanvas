@@ -39,6 +39,7 @@ h1 {
 h2 {
     color: rgb(47, 47, 47);
     margin-bottom: 1rem;
+    margin: 24px;
 }
 
 .recipe-step {
@@ -118,6 +119,7 @@ hr {
     padding-left: 8px; 
     margin-bottom: 10px; 
     display: flex;
+    margin: 24px;
 }
 
 .instruction .item .num {
