@@ -42,11 +42,12 @@ h2 {
 }
 
 .recipe-step {
-    margin: 0;
+    margin: 24px;
 }
 
 ul {
     padding-left: 20px;
+    margin: 4px;
 }
 
 ul li::marker {
@@ -101,7 +102,7 @@ hr {
 
 .description {
     font-weight: 700;
-    margin: 24px 0;
+    margin: 24px;
     font-size: 20px;
 }
 
