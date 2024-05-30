@@ -1,18 +1,18 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
 }
 
-body{
+body {
   width: 100%;
   height: 100vh;
   background-color: #f8f8f8;
 }
 
-/* <!-- ---------------navbar---------- --> */
-header{
+/* ---------------Navbar---------- */
+header {
   height: 60px;
   width: 100%;
   background-color: rgb(16, 16, 16);
@@ -20,9 +20,12 @@ header{
   display: flex;
   align-items: center;
   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
-.container{
+.container {
   width: 90%;
   margin: 0 auto;
   display: flex;
@@ -30,7 +33,7 @@ header{
   justify-content: space-between;
 }
 
-.menu-icon{
+.menu-icon {
   font-size: 24px;
   padding: 20px;
   text-align: right;
@@ -38,7 +41,7 @@ header{
   display: block;
 }
 
-.nav-list{
+.nav-list {
   display: none;
 }
 
@@ -52,24 +55,24 @@ nav > ul > li {
   text-align: center;
 }
 
-nav > ul > li > a{
+nav > ul > li > a {
   text-decoration: none;
   color: white;
 }
 
-nav > ul > li > a:hover{
-  color: rgb(246, 76, 76) ;
+nav > ul > li > a:hover {
+  color: rgb(246, 76, 76);
 }
 
-.r1{
+.r1 {
   position: relative;
 }
 
-.r1:hover .dropdown{
+.r1:hover .dropdown {
   display: block;
 }
 
-.dropdown{
+.dropdown {
   position: absolute;
   top: 55px;
   width: 180px;
@@ -78,7 +81,7 @@ nav > ul > li > a:hover{
   display: none;
 }
 
-.dropdown > li > a{
+.dropdown > li > a {
   text-decoration: none;
   color: white;
   background-color: black;
@@ -89,16 +92,16 @@ nav > ul > li > a:hover{
   font-weight: 600;
 }
 
-.dropdown > li > a:hover{
-  background-color: rgb(246, 76, 76) ;
+.dropdown > li > a:hover {
+  background-color: rgb(246, 76, 76);
 }
 
-.logo{
+.logo {
   font-size: 24px;
 }
 
-/* <!-- ---------------Hero Section---------- --> */
-.hero{
+/* ---------------Hero Section---------- */
+.hero {
   width: 100%;
   height: auto;
   background: url(image/hero.jpg);
@@ -111,17 +114,17 @@ nav > ul > li > a:hover{
   margin-bottom: 20px;
 }
 
-.hero h2{
+.hero h2 {
   font-size: 36px;
   margin-bottom: 10px;
 }
 
-.hero p{
+.hero p {
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-.search-box{
+.search-box {
   max-width: 550px;
   margin: 15px auto;
   display: flex;
@@ -129,16 +132,16 @@ nav > ul > li > a:hover{
   justify-content: center;
 }
 
-.search-box input{
+.search-box input {
   width: 70%;
-  padding: 10px;  
+  padding: 10px;
   outline: none;
-  border: 1px solid rgb(246, 76, 76) ;
+  border: 1px solid rgb(246, 76, 76);
   border-radius: 5px 0 0 5px;
   font-size: 1rem;
 }
 
-.search-box button{
+.search-box button {
   padding: 10px 20px;
   outline: none;
   border: 0;
@@ -149,93 +152,119 @@ nav > ul > li > a:hover{
   cursor: pointer;
 }
 
-
-/* <!-- ---------------Recipe Section---------- --> */
-.recipes{
+/* ---------------Recipe Section---------- */
+.recipes {
   padding: 50px 0;
+  background-color: #fff5e6; /* Light cream background */
 }
 
-.recipes h2{
+.recipes h2 {
   text-align: center;
   margin-bottom: 30px;
   font-size: 28px;
+  color: #ff6f61; /* Warm red color for heading */
 }
 
-.recipes-section{
+.recipes h2::before {
+  content: "☀️"; /* Sun emoji */
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.recipes h2::after {
+  content: "🍹"; /* Tropical drink emoji */
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 1.2em;
+}
+
+.recipes-section {
   width: 90%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   column-gap: 10px;
+  row-gap: 20px; /* Added row gap for better spacing */
 }
 
-.recipes-card{
-  background: white;
+.recipes-card {
+  background: #ffffff;
   margin: 30px 10px;
-  border: 1px solid wheat;
-  border-radius: 8px;
+  border: 2px solid #ffd1a9; /* Light orange border */
+  border-radius: 12px; /* Slightly larger border radius */
   overflow: hidden;
-  box-shadow: 0 4px 8px rgb(14, 14, 14,0.1);
+  box-shadow: 0 4px 8px rgba(14, 14, 14, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.recipes-card img{
+.recipes-card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  border-bottom: 2px solid #ffd1a9; /* Border separating image */
 }
 
-.recipes-card h3{
+.recipes-card h3 {
   font-size: 22px;
   padding: 20px;
+  color: #ff6f61; /* Warm red color for title */
+  background-color: #fff0e1; /* Light cream background for title */
+  margin: 0; /* Remove default margin */
 }
 
-.recipes-card p{
+.recipes-card p {
   font-size: 18px;
   padding: 20px;
+  color: #333333; /* Dark grey text */
+  background-color: #ffffff; /* White background for description */
+  margin: 0; /* Remove default margin */
 }
 
-.recipes-card a{
+.recipes-card a {
   display: block;
   text-align: center;
   text-decoration: none;
-  background-color: rgb(47, 47, 47);
+  background-color: #ff6f61; /* Warm red background */
   color: white;
   padding: 15px 0;
   cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-.recipes-card a:hover{
-  background-color: rgb(246, 76, 76) ;
+.recipes-card a:hover {
+  background-color: #333333; /* Darker warm red on hover */
   color: white;
 }
 
-.recipes-card:hover{
-  transform: scale(1.08);
+.recipes-card:hover {
+  transform: scale(1.05); /* Slightly larger scale on hover */
   box-shadow: 0 8px 16px rgba(14, 14, 14, 0.2);
 }
 
-footer{
+/* ---------------Footer---------- */
+footer {
   background: rgb(47, 47, 47);
   padding: 20px 0;
   color: white;
   text-align: center;
 }
 
-/* <!-- ---------------Media Query---------- --> */
-@media only screen and (min-width: 768px){
-  .menu-icon{
+/* ---------------Media Queries---------- */
+@media only screen and (min-width: 768px) {
+  .menu-icon {
     display: none;
   }
-  .nav-list{
+  .nav-list {
     display: block;
   }
 }
 
-@media only screen and (max-width: 768px){
-  .hero h2{
+@media only screen and (max-width: 768px) {
+  .hero h2 {
     font-size: 28px;
   }
-  .hero p{
+  .hero p {
     font-size: 15px;
   }
 }
