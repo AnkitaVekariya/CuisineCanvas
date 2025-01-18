@@ -20,6 +20,8 @@ Welcome to **Cuisine Canvas**, a frontend web project that beautifully showcases
 
 ![Screenshot from 2025-01-18 15-03-51](https://github.com/user-attachments/assets/90ab6f90-6e28-4d4b-8e5e-439937ad8a8a)
 ![Screenshot from 2025-01-18 15-04-23](https://github.com/user-attachments/assets/42577e6a-1e8f-4474-946c-a9e08e2adfee)
+![Screenshot from 2025-01-18 15-04-37](https://github.com/user-attachments/assets/8eaae9c4-f5a8-49bb-8c5f-e1d536d0fa22)
+![Screenshot from 2025-01-18 15-15-42](https://github.com/user-attachments/assets/b1b3a46f-b5a0-4012-b942-e0331104d925)
 
 ## Getting Started
 
