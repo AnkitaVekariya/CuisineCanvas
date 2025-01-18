@@ -6,7 +6,6 @@ Welcome to **Cuisine Canvas**, a frontend web project that beautifully showcases
 
 - **Dropdown Navigation:** Organized categories for easy browsing (Appetizers, Lunch, Dinner, Breakfast, Drinks, Chutneys, etc.).
 - **Dish Display:** Each dish is presented with an image and recipe.
-- **Responsive Design:** Optimized for both desktop and mobile devices.
 - **Elegant Layout:** Clean and visually appealing design using only HTML and CSS.
 
 ## Technologies Used
