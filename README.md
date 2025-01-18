@@ -1,5 +1,3 @@
-# CuisineCanvas
- 
 # Cuisine Canvas
 
 Welcome to **Cuisine Canvas**, a frontend web project that beautifully showcases a variety of Indian dishes! The website features categories like appetizers, lunch, dinner, breakfast, drinks, chutneys, and more, with images and recipes for each dish. This project highlights my skills in HTML and CSS by creating a visually appealing and user-friendly interface.
